@@ -1,0 +1,110 @@
+﻿<!-- Evin Park
+    Feb 12, 2020
+    Names and calculates the cost of computer parts
+    -->
+<Window x:Class="_317324Assignment1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_317324Assignment1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <ScrollViewer>
+        <StackPanel>
+
+            <Label x:Name="lblCPU" Content="CPU" FontWeight="Bold" FontSize="14" />
+            <Label>Intel i3-9100F</Label>
+            <Label>$109.99</Label>
+
+            <Button x:Name="btnCPULink" Content="Click To See Website"
+                Click="btnCPULink_Click" />
+
+            <Label Height="25" />
+
+            <Label x:Name="lblMotherboard" Content="Motherboard" FontWeight="Bold" FontSize="14" />
+            <Label>Asus B250</Label>
+            <Label>$34.09</Label>
+
+            <Button x:Name="btnMotherboardLink" Content="Click To See Website"
+                Click="btnMotherboardLink_Click" />
+
+            <Label Height="25" />
+
+            <Label x:Name="lblCase" Content="Case" FontWeight="Bold" FontSize="14" />
+            <Label>Deepcool Matrexx 30</Label>
+            <Label>$34.99</Label>
+
+            <Button x:Name="btnCaseLink" Content="Click To See Website"
+                Click="btnCaseLink_Click" />
+
+            <Label Height="25" />
+
+            <Label x:Name="lblPowerSupply" Content="Power Supply" FontWeight="Bold" FontSize="14" />
+            <Label>EVGA 500W</Label>
+            <Label>$64.99</Label>
+
+            <Button x:Name="btnPowerSupplyLink" Content="Click To See Website"
+                Click="btnPowerSupplyLink_Click" />
+
+            <Label Height="25" />
+
+            <Label x:Name="lblRAM" Content="RAM" FontWeight="Bold" FontSize="14" />
+            <Label>Corsair Vengeance</Label>
+            <Label>$104.99</Label>
+
+            <Button x:Name="btnRAMLink" Content="Click To See Website"
+                Click="btnRAMLink_Click" />
+
+            <Label Height="25" />
+
+            <Label x:Name="lblGPU" Content="GPU" FontWeight="Bold" FontSize="14" />
+            <Label>GIGABYTE Radeon</Label>
+            <Label>$199.99</Label>
+
+            <Button x:Name="btnGPULink" Content="Click To See Website"
+                Click="btnGPULink_Click" />
+
+            <Label Height="25" />
+
+            <Label x:Name="lblHardDrive" Content="Hard Drive" FontWeight="Bold" FontSize="14" />
+            <Label>Seagate BarraCuda</Label>
+            <Label>$74.99</Label>
+
+            <Button x:Name="btnHardDriveLink" Content="Click To See Website"
+                Click="btnHardDriveLink_Click" />
+
+            <Label Height="25" />
+
+            <Label x:Name="lblOpticalDrive" Content="Optical Drive" FontWeight="Bold" FontSize="14" />
+            <Label>ASUS DRW-24F1ST</Label>
+            <Label>$22.99</Label>
+
+            <Button x:Name="btnOpticalDriveLink" Content="Click To See Website"
+                Click="btnOpticalDriveLink_Click" />
+
+            <Label Height="25" />
+
+            <Label FontSize="14">The total cost is $647.02</Label>
+
+            <Label Height="25" />
+
+            <ComboBox x:Name="imgSelector" SelectionChanged="imgSelector_SelectionChanged" FontSize="20">
+                <ComboBoxItem IsSelected="True">What picture would you like to see?</ComboBoxItem>
+                <ComboBoxItem>CPU</ComboBoxItem>
+                <ComboBoxItem>Motherboard</ComboBoxItem>
+                <ComboBoxItem>Case</ComboBoxItem>
+                <ComboBoxItem>Power Supply</ComboBoxItem>
+                <ComboBoxItem>RAM</ComboBoxItem>
+                <ComboBoxItem>GPU</ComboBoxItem>
+                <ComboBoxItem>Hard Drive</ComboBoxItem>
+                <ComboBoxItem>Optical Drive</ComboBoxItem>
+                
+
+            </ComboBox>
+            <Label Height="50" />
+
+            <Image x:Name="imgPicSelection" Height="200"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
